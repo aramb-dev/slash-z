@@ -152,8 +152,11 @@
 
     <footer>
       <p>
-        © 2021 <a href="https://hackclub.com">The Hack Foundation</a>
+        © 2021-<span id="current-year"></span> <a href="https://hackclub.com">The Hack Foundation</a>
       </p>
     </footer>
+    <script>
+      document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
   </body>
 </html>
